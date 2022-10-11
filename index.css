@@ -124,7 +124,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: hsl(158, 36%, 37%);
-    border: 13px solid red;
     border-radius: 10px;
     width: 80%;
     height: 50px;
