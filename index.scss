@@ -124,6 +124,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: hsl(158, 36%, 37%);
+    border: 13px solid red;
     border-radius: 10px;
     width: 80%;
     height: 50px;
@@ -135,8 +136,10 @@ button {
     border: none;
     color: hsl(0, 0%, 100%);
     background-color: hsl(158, 36%, 37%);
+    border: 13px solid red;
 }
 
 .button:hover {
     transform: scale(1.1);
+    border: 3px solid red;
 }
