@@ -1,142 +1,99 @@
 body {
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    margin: auto;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
-.product-wrapper {
+main {
     margin: 20px;
-    padding: 20px;
-    background-color: hsl(30, 38%, 92%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-@media (max-width: 375px){
-    .product-wrapper{
-        margin: 0px;
-        padding: 0px;
+@media (min-width: 376px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10% 20%;
     }
 }
 
-.product-container {
+.car-wrapper {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 610px;
-    display: flex;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 15px;
-    margin: 10vh;
+    align-items: flex-start;
+    color: hsl(0, 0%, 95%);
+    padding: 40px;
 }
 
-@media (min-width:375px) {
-    .product-container {
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 10vh auto;
-    }
-    .left-side{
-        width: 50%;
-    }
-    .right-side {
-        width: 50%;
+@media (min-width: 376px) {
+    .car-wrapper {
+        width: 20vw;
+        height: 600px;
+        justify-content: space-evenly;
     }
 }
 
-.left-side{
-    width: 100%;
+.car-category {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
 }
 
-.product-image {
-    max-width: 300px;
+.btn {
+    border-radius: 30px;
+    height: 40px;
+    width: 40vw;
+    background-color: hsl(0, 0%, 95%);
+    text-transform: capitalize;
+    border: none;
+    margin-top: 20px;
+}
+
+@media (min-width: 376px) {
+    .btn {
+        width: 75%;
+    }
+}
+
+.sedan .btn {
+    color: hsl(31, 77%, 52%)
+}
+
+.suv .btn {
+    color: hsl(184, 100%, 22%)
+}
+
+.luxury .btn {
+    color: hsl(179, 100%, 13%)
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 24px;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
     border-radius: 15px 15px 0 0;
 }
 
-@media (min-width: 375px){
-    .product-image {
-        max-height: 550px;
+@media (min-width: 376px) {
+    .sedan {
         border-radius: 15px 0 0 15px;
     }
-
 }
 
-.right-side {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.suv {
+    background-color: hsl(184, 100%, 22%);
 }
 
-.text-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
-    padding: 20px 20px 0 20px ;
-    margin: 5px;
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 15px 15px;
 }
 
-.text-wrapper h1 {
-    font-weight: 800;
-}
-
-.text-wrapper h3 {
-    font-size: small;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: hsl(228, 12%, 48%);
-}
-
-.text-wrapper p {
-    color: hsl(228, 12%, 48%);
-    line-height: 20px;
-}
-
-.price {
-    font-family: 'Fraunces', serif;
-    display: flex;
-    width: 80%;
-    padding: 10px;
-    margin: 10px;
-    justify-content: flex-start;
-    align-items: center;
-    color: hsl(158, 36%, 37%);
-}
-
-.price__current {
-    font-weight: 800;
-    font-size: 30px;
-    padding-right: 10px;
-}
-
-.price__previous {
-    color: hsl(228, 12%, 48%);
-    text-decoration: line-through;
-}
-
-.button {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(158, 36%, 37%);
-    border-radius: 10px;
-    width: 80%;
-    height: 50px;
-    transition: all .2s ease-in-out;
-}
-
-button {
-    font-weight: 800;
-    border: none;
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(158, 36%, 37%);
-}
-
-.button:hover {
-    transform: scale(1.1);
+@media (min-width: 376px){
+    .luxury{
+        border-radius: 0 15px 15px 0;
+    }
 }

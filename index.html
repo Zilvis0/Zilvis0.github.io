@@ -4,23 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="index.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,800&family=Montserrat:wght@400;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
     rel="stylesheet">
-  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+  <title>3-column preview card component | Frontend Mentor</title>
 
   <style>
     .attribution {
       font-size: 11px;
       text-align: center;
     }
-    
-    
+
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
@@ -28,40 +25,40 @@
 </head>
 
 <body>
-  <main class="product-wrapper">
-    <div class="product-container">
-      <div class="left-side">
-        <picture>
-          <source media="(max-width:374px)" srcset="./images/image-product-mobile.jpg">
-          <source media="(min-width:375px)" srcset="./images/image-product-desktop.jpg">
-          <img class="product-image" src="./images/image-product-desktop.jpg" alt="perfume bottle" />
-      </picture>
-      </div>
-      <div class="right-side">
-        <div class="text-wrapper">
-          <h3>Perfume</h3>
-          <h1> Gabrielle Essence Eau De Parfum</h1>
-          <p>
-            A floral, solar and voluptuous interpretation composed by Olivier Polge,
-            Perfumer-Creator for the House of CHANEL.
-          </p>
-        </div>
-        <div class="price">
-          <div class="price__current">$149.99</div>
-          <div class="price__previous">$169.99</div>
-        </div>
-        <div class="button">
-          <img src="./images/icon-cart.svg">
-          <button>Add to Cart</button>
-        </div>
-      </div>
-    </div>
+  <main>
+    <section class="car-wrapper sedan">
+      <img src="./images/icon-sedans.svg">
+      <h1 class="car-category">Sedans</h1>
+      <p class="car-description">
+        Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+        or on your next road trip.
+      </p>
+      <button class="btn">learn more</button>
+    </section>
+    <section class="car-wrapper suv">
+      <img src="./images/icon-suvs.svg">
+      <h1 class="car-category">Suvs</h1>
+      <p class="car-description">
+        Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+        and off-road adventures.
+      </p>
+      <button class="btn">learn more</button>
+    </section>
+    <section class="car-wrapper luxury">
+      <img src="./images/icon-luxury.svg">
+      <h1 class="car-category">luxury</h1>
+      <p class="car-description">
+        Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+        rental and arrive in style.
+      </p>
+      <button class="btn">learn more</button>
+    </section>
   </main>
 
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io/profile/Zilvis0" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/Zilvis0" target="_blank">Zilvinas Pusnys</a>.
-  </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://pusnys.com">Zilvinas Pusnys</a>.
+  </div>
 </body>
 
 </html>
